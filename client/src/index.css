@@ -26,7 +26,11 @@
 }
 
 #calendarbox{
+margin-top: 2%;
 
 
+}
 
+#calendar{
+  background-color: #fcf9d6;
 }
