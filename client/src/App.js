@@ -1,33 +1,35 @@
 import React from "react";
 import Google from "./Google";
 import Calendar from "./Calendar";
+import News from "./News";
 
 const App = () =>
-<div class='container'>
-<div class='row'>
-<div id ='calendar' class='square'>
+<div className='container'>
+<div className='row'>
+<div id ='calendar' className='square'>
 <Calendar/>
 </div>
-<div class='square'>
+<div id='newsbox' className='square'>
+<News/>
 </div>
-<div class='square'>
+<div className='square'>
 </div>
 </div>
-<div class='row'>
-<div class='square'>
+<div className='row'>
+<div className='square'>
 </div>
-<div class='square'>
+<div className='square'>
 <Google />
 </div>
-<div class='square'>
+<div className='square'>
 </div>
 </div>
-<div class='row'>
-<div class='square'>
+<div className='row'>
+<div className='square'>
 </div>
-<div class='square'>
+<div className='square'>
 </div>
-<div class='square'>
+<div className='square'>
 </div>
 </div>
 </div>

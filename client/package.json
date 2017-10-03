@@ -2,6 +2,7 @@
   "name": "practice",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "moment": "^2.18.1",
     "rc-calendar": "^9.1.8",
