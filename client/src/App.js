@@ -3,6 +3,7 @@ import Google from "./Google";
 import Calendar from "./Calendar";
 import News from "./News";
 import WoD from "./WoD";
+import Yelp from "./Yelp";
 
 const App = () =>
 <div className='container'>
