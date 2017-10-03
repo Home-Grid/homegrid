@@ -2,7 +2,10 @@
 
 .DayPicker {
   display: inline-block;
-      line-height: 90%;
+         line-height: 130%;
+         font-family: 'Montserrat', sans-serif;
+         margin-top: 1%;
+         background-color: #fcf9d6
 }
 
 .DayPicker-wrapper {
@@ -58,7 +61,7 @@
   display: table-caption;
   height: 1.5rem;
   text-align: center;
-  font-size:.5em;
+  font-size:16px;
 }
 
 .DayPicker-Weekdays {
@@ -74,7 +77,7 @@
   padding: 0rem .5rem;
   font-size: .5em;
   text-align: center;
-  color: #8b9898;
+  color: black;
 }
 
 .DayPicker-Body {
@@ -87,8 +90,8 @@
 
 .DayPicker-Day {
   display: table-cell;
-  padding: 0rem .9rem;
-  border: 1px solid #eaecec;
+  padding: 0rem 10px;
+  border: 1px solid black;
   text-align: center;
   cursor: pointer;
   vertical-align: middle;

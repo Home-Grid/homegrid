@@ -2,9 +2,6 @@
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
   height: 180px;
   margin-right: -1px;
   margin-top: -1px;
@@ -29,6 +26,11 @@
 }
 
 #calendarbox{
+margin-top: 2%;
 
 
+}
+
+#calendar{
+  background-color: #fcf9d6;
 }
