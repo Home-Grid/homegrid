@@ -15,6 +15,9 @@ export default {
   },
   getWords: function(){
   	return axios.get("/api/words");
+  },
+  getYelps: function(){
+    return axios.get("/api/yelps");
   }
 
 };

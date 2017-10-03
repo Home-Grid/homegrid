@@ -16,15 +16,18 @@ const App = () =>
 <div className='square'>
 </div>
 </div>
+
 <div className='row'>
-<div className='square'>
-<WoD />
+<div className='square' id='newsbox'>
+<WoD/>
 </div>
 <div className='square'>
 <Google />
 </div>
-<div className='square'>
+<div className='square' id='newsbox'>
+<Yelp />
 </div>
+
 </div>
 <div className='row'>
 <div className='square'>

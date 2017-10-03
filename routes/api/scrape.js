@@ -79,9 +79,9 @@ router.route("/fox").get(function(req, res){
  res.send(results);
         //console.log(results);
         return results;
-});
+      });
 
-})
+});
 
 
 

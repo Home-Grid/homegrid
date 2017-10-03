@@ -5,6 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './Calendar.css';
 import './News.css';
+import './WoD.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
