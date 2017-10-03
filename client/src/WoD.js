@@ -26,19 +26,18 @@ class WoD extends Component {
   render() {
     return (
       <div className="App">
-      <div className="nav">
-      <h3 id="newstitle">Word of the Day</h3>
-       <img onClick={() => this.getWords()} id="cnnlogo" height="18px" src="https://nppa.org/sites/default/files/CNN%20LOGO%20new.png"/>
+        <div className="nav">
+          <h3 id="newstitle">Word of the Day</h3>
+          <img onClick={() => this.getWords()} id="cnnlogo" height="18px" src="https://nppa.org/sites/default/files/CNN%20LOGO%20new.png"/>
+        </div>
 
-      </div>
-      <div id="scrapedarticles">
+        <div id="scrapedarticles">
 
-     {this.state.words.map(word => (
+        {this.state.words.map(word => (
+          <p className="articles"><a className="articletext" href={word.word}> {word.definition}</a></p>
+        ))}
 
-                        <p class="articles"><a class="articletext" href={word.word}> def here{word.definition}</a></p>
-
-                ))}
-</div>
+        </div>
       </div>
     );
   }
