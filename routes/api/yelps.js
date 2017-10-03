@@ -24,11 +24,15 @@ router.route("/").get(function(req, res) {
       client.search(searchRequest).then(response => {
         const firstResult = response.jsonBody.businesses[0];
         const prettyJson = JSON.stringify(firstResult, null, 4);
-        //console.log(prettyJson);
+        console.log(firstResult.id);
 
         results.push({
-          id: prettyJson.id,
-          url: prettyJson.url
+          id: firstResult.id,
+          name: firstResult.name,
+          url: firstResult.url,
+          imgurl: firstResult.image_url,
+          reviewcount: firstResult.review_count,
+          rating: firstResult.rating
         });
 
       });
@@ -38,7 +42,7 @@ router.route("/").get(function(req, res) {
 
 
     res.send(results);
-    //console.log(results);
+    //console.log("results"+results);
     return results;
 
 });
