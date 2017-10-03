@@ -2,6 +2,7 @@ import React from "react";
 import Google from "./Google";
 import Calendar from "./Calendar";
 import News from "./News";
+import WoD from "./WoD";
 
 const App = () =>
 <div className='container'>
@@ -17,6 +18,7 @@ const App = () =>
 </div>
 <div className='row'>
 <div className='square'>
+<WoD />
 </div>
 <div className='square'>
 <Google />

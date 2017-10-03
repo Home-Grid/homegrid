@@ -26,7 +26,7 @@ router.route("/").get(function(req, res) {
             });
         });
         res.send(results);
-        console.log(results);
+        //console.log(results);
         return results;
 
     });
@@ -52,7 +52,7 @@ router.route("/cnn").get(function(req, res) {
 
         });
         res.send(results);
-        console.log(results);
+        //console.log(results);
         return results;
     });
 
@@ -60,7 +60,7 @@ router.route("/cnn").get(function(req, res) {
 
 router.route("/fox").get(function(req, res){
 	request("http://www.foxnews.com/", function(error, response, html) {
- 
+
   var $ = cheerio.load(html);
 
   var results = [];
@@ -77,7 +77,7 @@ router.route("/fox").get(function(req, res){
     });
   });
  res.send(results);
-        console.log(results);
+        //console.log(results);
         return results;
 });
 

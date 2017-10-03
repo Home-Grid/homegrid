@@ -12,6 +12,9 @@ export default {
 
   scrapeFox: function(){
   	return axios.get("/api/scrape/fox");
+  },
+  getWords: function(){
+  	return axios.get("/api/words");
   }
 
 };
