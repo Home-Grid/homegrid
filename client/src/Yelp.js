@@ -34,7 +34,7 @@ class Yelp extends Component {
         <div id="scrapedarticles">
 
         {this.state.businesses.map(business => (
-          <p className="articles"><div className="articletext"> {business}</div></p>
+          <p className="articles"><div className="articletext"> {business.id}</div></p>
         ))}
 
         </div>

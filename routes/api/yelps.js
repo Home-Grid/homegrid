@@ -24,8 +24,12 @@ router.route("/").get(function(req, res) {
       client.search(searchRequest).then(response => {
         const firstResult = response.jsonBody.businesses[0];
         const prettyJson = JSON.stringify(firstResult, null, 4);
-        console.log(prettyJson);
-        results.push(prettyJson);
+        //console.log(prettyJson);
+
+        results.push({
+          id: prettyJson.id,
+          url: prettyJson.url
+        });
 
       });
     }).catch(e => {
