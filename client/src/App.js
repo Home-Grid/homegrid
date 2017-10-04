@@ -13,10 +13,12 @@ const App = () =>
     <Calendar/>
     </div>
 
-    <div className='square'>
+    <div id='newsbox' className='square'>
+    <News/>
     </div>
 
-    <div className='square'>
+    <div className='square' id='newsbox'>
+    <WoD/>
     </div>
 
   </div>
@@ -38,17 +40,16 @@ const App = () =>
   </div>
 
   <div className='row'>
+
     <div className='square'>
     </div>
 
-    <div id='newsbox' className='square'>
-    <News/>
+    <div className='square'>
     </div>
 
-    <div className='square' id='newsbox'>
-    <WoD/>
+    <div className='square'>
     </div>
-    
+
   </div>
 </div>
 

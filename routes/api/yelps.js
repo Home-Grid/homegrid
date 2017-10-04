@@ -6,7 +6,7 @@ const router = require("express").Router();
 router.route("/").get(function(req, res) {
 
 
-    var results = [];
+    var yelpsArray = [];
 
     // Place holders for Yelp Fusion's OAuth 2.0 credentials. Grab them
     // from https://www.yelp.com/developers/v3/manage_app
@@ -22,28 +22,27 @@ router.route("/").get(function(req, res) {
       const client = yelp.client(response.jsonBody.access_token);
 
       client.search(searchRequest).then(response => {
-        const firstResult = response.jsonBody.businesses[0];
-        const prettyJson = JSON.stringify(firstResult, null, 4);
-        console.log(firstResult.id);
+        for (var i = 0; i < response.jsonBody.businesses.length; i++) {
+          let result = response.jsonBody.businesses[i];
+          yelpsArray.push({
+            id: result.id,
+            name: result.name,
+            url: result.url,
+            imgurl: result.image_url,
+            reviewcount: result.review_count,
+            rating: result.rating
+          });
 
-        results.push({
-          id: firstResult.id,
-          name: firstResult.name,
-          url: firstResult.url,
-          imgurl: firstResult.image_url,
-          reviewcount: firstResult.review_count,
-          rating: firstResult.rating
-        });
-        console.log(results);
+        }
+        res.send(yelpsArray);
+        //console.log("HERE",yelpsArray);
       });
     }).catch(e => {
       console.log(e);
     });
 
 
-    res.send(results);
-    //console.log("results"+results);
-    return results;
+    return yelpsArray;
 
 });
 

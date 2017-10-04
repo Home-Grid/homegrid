@@ -13,34 +13,34 @@ mongoose.connect(
 
 const wordSeed = [
   {
-    word: "Zone",
-    definition: "Stephen King"
+    word: "Profligate",
+    definition: "adjective: spending resources recklessly or wastefully"
 
   },
 
   {
-    word: "Harry's Stone",
-    definition: "J.K. Rowling"
+    word: "Intimate",
+    definition: "verb: to suggest something subtly"
   },
   {
-    word: "Total Recall",
-    definition: "Arnold Schwarzenegger"
+    word: "Chastise",
+    definition: "verb: to reprimand harshly"
   },
   {
-    word: "Astrophysics",
-    definition: "Neil deGrasse Tyson"
+    word: "Censure",
+    definition: "verb: to express strong disapproval"
   },
   {
-    word: "1984",
-    definition: "George Orwell"
+    word: "Wanting",
+    definition: "adjective: lacking"
   },
   {
-    word: "The Great Gatsby",
-    definition: "F. Scott Fitzgerald"
+    word: "Undermine",
+    definition: "verb: to weaken (usually paired with an abstract term)"
   },
   {
-    word: "Childhood",
-    definition: "Trevor Noah"
+    word: "Venerate",
+    definition: "verb: to respect deeply"
   }
 ];
 

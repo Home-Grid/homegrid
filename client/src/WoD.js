@@ -3,13 +3,15 @@ import API from "./utils/API";
 
 class WoD extends Component {
    state = {
-    words:[]
+    words:[],
+    randomWord:[]
   }
 
 
 
   WOD = res => {
-    this.setState({ words: res.data })}
+    this.setState({ words: res.data,
+     })}
     getWords = () => {
     API.getWords()
       .then(res =>{this.WOD(res)})
@@ -35,7 +37,7 @@ class WoD extends Component {
         {this.state.words.map(word => (
           <p className="word">{word.word}<br/>{word.definition}</p>
         ))}
-
+        {this.state.randomWord}
         </div>
       </div>
     );

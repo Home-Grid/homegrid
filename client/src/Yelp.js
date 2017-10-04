@@ -30,8 +30,14 @@ class Yelp extends Component {
        </div>
       <div id="scrapedarticles">
 
-     {this.state.businesses.map(article => (
-                        <p className="articlesYelp">◉<p className="articletextYelp">{article.name} {article.id}</p></p>
+     {this.state.businesses.map(business => (
+                        <a className="articlesYelp" href={business.url}>
+
+                        <p className="articletextYelp">{business.name},  Rating:{business.rating}</p>
+
+                        <img id="yelpimage" height="30px" width="30px" src={business.imgurl}/>
+
+                        </a>
                 ))}
 </div>
       </div>
