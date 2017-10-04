@@ -8,39 +8,40 @@ class Yelp extends Component {
 
 
 
-  Yelp = res => {
-    this.setState({ words: res.data })}
+  YELP = res => {
+    this.setState({ businesses: res.data })}
     getBusinesses = () => {
     API.getYelps()
-      .then(res =>{this.Yelp(res)})
+      .then(res =>{this.YELP(res)})
       .catch(err => console.log(err));
   }
 
    componentDidMount() {
     this.getBusinesses();
+
   }
-
-
 
 
   render() {
     return (
       <div className="App">
-        <div className="nav">
-          <h3 id="wodtitle">Word of the Day</h3>
-          <img onClick={() => this.getBusinesses()} id="redbutton" height="18px" src="https://images-na.ssl-images-amazon.com/images/I/6186VfIYnPL.png"/>
-        </div>
+      <div className="yelptitlebox">
+      <h3 id="titleYelp">Yelp</h3>
+       </div>
+      <div id="scrapedarticles">
 
-        <div id="scrapedarticles">
-
-        {this.state.businesses.map(business => (
-          <p className="articles"><div className="articletext"> {business.id}</div></p>
-        ))}
-
-        </div>
+     {this.state.businesses.map(article => (
+                        <p className="articlesYelp">◉<p className="articletextYelp">{article.name} {article.id}</p></p>
+                ))}
+</div>
       </div>
     );
   }
+
+
+
+
+
 
 }
 

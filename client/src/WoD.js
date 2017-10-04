@@ -28,13 +28,12 @@ class WoD extends Component {
       <div className="App">
         <div className="nav">
           <h3 id="wodtitle">Word of the Day</h3>
-          <img onClick={() => this.getWords()} id="redbutton" height="18px" src="https://images-na.ssl-images-amazon.com/images/I/6186VfIYnPL.png"/>
         </div>
 
-        <div id="scrapedarticles">
+        <div id="wordbody">
 
         {this.state.words.map(word => (
-          <p className="articles"><div className="articletext"> {word.word}<br/>{word.definition}</div></p>
+          <p className="word">{word.word}<br/>{word.definition}</p>
         ))}
 
         </div>

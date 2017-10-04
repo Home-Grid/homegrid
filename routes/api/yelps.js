@@ -34,7 +34,7 @@ router.route("/").get(function(req, res) {
           reviewcount: firstResult.review_count,
           rating: firstResult.rating
         });
-
+        console.log(results);
       });
     }).catch(e => {
       console.log(e);
