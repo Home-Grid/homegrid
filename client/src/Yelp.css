@@ -19,7 +19,9 @@
 text-decoration: none;
     margin-left: 1%;
 }
-
+#yelpBTN{
+  color:#d32323;
+}
 
 #titleYelp{
 	padding-left:1%;
