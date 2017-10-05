@@ -14,13 +14,22 @@
 text-decoration: none;
     margin-left: 1%;
 }
+.wodtitlebox{
 
+  	margin-top: -5.5%;
+  	padding-bottom: 2%;
+  	color:white;
+	  background-color:#32cd32;
+}
 
 #wodtitle{
-	padding-left:1%;
-	display: inline-block;
-	font-size: 25px;
-	margin:1% 2% 1% 2%;
-	color:#ddddd;
-	font-family: 'Verdana', cursive;
+	font: 24px Helvetica,sans-serif;
+	line-height: 26px;
+	font-style: italic;
+	font-weight: 700;
+	text-decoration: none;
+	padding-top: 3%;
+	margin-top: 19px;
+	color:white;
+	background-color:#32cd32;
 }

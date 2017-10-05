@@ -30,7 +30,7 @@ class WoD extends Component {
   render() {
     return (
       <div className="App">
-        <div className="nav">
+        <div className="wodtitlebox">
           <h3 id="wodtitle">
           Word of the Day
           <Button onClick={this.getWords}

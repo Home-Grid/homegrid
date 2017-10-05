@@ -46,7 +46,7 @@ class Yelp extends Component {
     return (
       <div className="App">
       <div className="yelptitlebox">
-      <h3 id="titleYelp">Yelp</h3>
+      <h1 id="titleYelp">Yelp</h1>
 
 
        </div>
@@ -58,10 +58,10 @@ class Yelp extends Component {
               value={this.state.searchCity} placeholder="Newport Beach" onChange={this.handleChangeCity}
                />
 
-                 <Button id="yelpBTN"
+                 <Button className="yelpBTN"
                  onClick={this.RETRIEVE}
                >
-               <p>!</p>
+               <img id='yelpbutton' height="30px" width="30px" src='https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/64/9d/aa/649daa0e-c33d-fc63-9100-40183b3990c9/source/1200x630bb.jpg'/>
                </Button>
        </form>
       <div id="scrapedarticles">
@@ -69,10 +69,10 @@ class Yelp extends Component {
      {this.state.businesses.map(business => (
                         <a className="articlesYelp" href={business.url}>
 
-                        <p className="articletextYelp">{business.name},  Rating:{business.rating}</p>
+                        <p className="articletextYelp">{business.name}   Rating: {business.rating}
 
-                        <img id="yelpimage" height="30px" width="30px" src={business.imgurl}/>
-
+                        <img id={business.name} height="35px" width="35px" src={business.imgurl}/>
+                        </p>
                         </a>
                 ))}
 </div>
