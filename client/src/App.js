@@ -8,14 +8,16 @@ import Thesaurus from "./Thesaurus";
 import Dictionary from "./Dictionary";
 import VidLinks from "./VidLinks";
 import Weather from "./Weather";
+import GiphySelect from "./giphy"
 
 
 
 const App = () =>
 <div className='container'>
 <div className='row'>
-<div id ='calendar' className='square'>
-<Calendar/>
+<div id ='giphy' className='square'>
+<GiphySelect />
+
 </div>
 <div id='newsbox' className='square'>
 <News/>
