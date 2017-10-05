@@ -1,13 +1,15 @@
 .square {
   background: #fff;
-  border: 1px solid #999;
+/*  border: 1px solid #999;*/
   float: left;
   height: 180px;
-  margin-right: -1px;
+  margin-right: 1%;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 33.3%;
+  width: 31%;
+  margin-bottom: 1%;
+
 
 }
 #root{
@@ -16,23 +18,23 @@
 
 #googlebox{
   width:25%;
-  margin-left:38%;
+    margin-left: 35%;
   margin-bottom:0%;
   z-index:100;
   position:absolute;
-     margin-top: -25%;
+     margin-top: -28%;
 
 }
 
 #thesaurusbox{
 border:1px solid #dddad7;
-border-radius: 2%;
+border-radius: 3%;
 overflow-y: scroll;
 }
 
 #dictionarybox{
 border:1px solid #dddad7;
-border-radius: 2%;
+border-radius: 3%;
 overflow-y: scroll;
 }
 
@@ -43,11 +45,12 @@ overflow-y: scroll;
 #calendarbox{
 margin-top: 2%;
 
-
 }
 
 #calendar{
   background-color: #fff789;
+  border-radius: 3%;
+
 }
 
 input.gsc-search-button-v2 {
