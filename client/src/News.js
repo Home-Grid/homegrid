@@ -44,15 +44,15 @@ class News extends Component {
       <div className="App">
       <div className="nav">
       <h3 id="newstitle">NEWS</h3>
-       <img onClick={() => this.scrapeCNN()} id="cnnlogo" height="18px" src="https://nppa.org/sites/default/files/CNN%20LOGO%20new.png"/>
-      <img onClick={() => this.scrapeNews()} id="nylogo" height="20px" src="https://www.insidehighered.com/sites/default/server_files/media/nyt-t-logo.png"/>
-      <img onClick={() => this.scrapeFOX()} id="foxlogo" height="21px" src="https://lh3.googleusercontent.com/l8woCU1YmtyKlkNOh2TNvQJj8P78Rm56JljLDUj-83YzD3OU6UCvqM-vzqpBOkOrW2Q=w300"/>
+       <img alt="cnn" onClick={() => this.scrapeCNN()} id="cnnlogo" height="18px" src="https://nppa.org/sites/default/files/CNN%20LOGO%20new.png"/>
+      <img alt="Ny" onClick={() => this.scrapeNews()} id="nylogo" height="20px" src="https://www.insidehighered.com/sites/default/server_files/media/nyt-t-logo.png"/>
+      <img  alt="fox" onClick={() => this.scrapeFOX()} id="foxlogo" height="21px" src="https://lh3.googleusercontent.com/l8woCU1YmtyKlkNOh2TNvQJj8P78Rm56JljLDUj-83YzD3OU6UCvqM-vzqpBOkOrW2Q=w300"/>
       </div>
       <div id="scrapedarticles">
   
      {this.state.articles.map(article => (
                       
-                        <p class="articles">◉<a class="articletext" href={article.link}> {article.title}</a></p> 
+                        <p className="articles"><a className="articletext" href={article.link}> {article.title}</a></p> 
                      
                 ))}
 </div>

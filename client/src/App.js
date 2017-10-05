@@ -2,6 +2,7 @@ import React from "react";
 import Google from "./Google";
 import Calendar from "./Calendar";
 import News from "./News";
+import Thesaurus from "./Thesaurus";
 
 const App = () =>
 <div className='container'>
@@ -29,7 +30,8 @@ const App = () =>
 </div>
 <div className='square'>
 </div>
-<div className='square'>
+<div id ="thesaurusbox" className='square'>
+<Thesaurus/>
 </div>
 </div>
 </div>
