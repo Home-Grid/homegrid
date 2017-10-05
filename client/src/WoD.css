@@ -1,0 +1,26 @@
+
+.articlesYelp{
+	padding-left: 2%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #f5f5f5;
+  color:#dddddd;
+}
+
+
+
+
+.word{
+	 color:black;
+text-decoration: none;
+    margin-left: 1%;
+}
+
+
+#wodtitle{
+	padding-left:1%;
+	display: inline-block;
+	font-size: 25px;
+	margin:1% 2% 1% 2%;
+	color:#d32323;
+	font-family: 'Verdana', cursive;
+}

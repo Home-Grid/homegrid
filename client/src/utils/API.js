@@ -13,6 +13,12 @@ export default {
   scrapeFox: function(){
   	return axios.get("/api/scrape/fox");
   },
+  getWords: function(){
+  	return axios.get("/api/words");
+  },
+  getYelps: function(){
+    return axios.get("/api/yelps");
+  },
 
   getWord: function(userinput){
     var config = {

@@ -24,6 +24,7 @@
 #thesaurusbox{
 border:1px solid #dddad7;
 border-radius: 2%;
+overflow-y: scroll;
 }
 
 #root{

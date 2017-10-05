@@ -2,6 +2,8 @@ import React from "react";
 import Google from "./Google";
 import Calendar from "./Calendar";
 import News from "./News";
+import WoD from "./WoD";
+import Yelp from "./Yelp";
 import Thesaurus from "./Thesaurus";
 
 const App = () =>
@@ -13,8 +15,9 @@ const App = () =>
 <div id='newsbox' className='square'>
 <News/>
 </div>
-<div className='square'>
-</div>
+<div className='square' id='newsbox'>
+    <WoD/>
+    </div>
 </div>
 <div className='row'>
 <div className='square'>
@@ -22,8 +25,9 @@ const App = () =>
 <div className='square'>
 <Google />
 </div>
-<div className='square'>
-</div>
+   <div className='square' id='newsbox'>
+    <Yelp />
+    </div>
 </div>
 <div className='row'>
 <div className='square'>
