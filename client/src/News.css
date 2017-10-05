@@ -14,15 +14,15 @@
     color: #25348c;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar-y {
     -webkit-appearance: none;
-    width: 4px;
-    border-left: 1px solid #25348c;
+    width: 2px;
+    border-left: 0.5px solid #dddad7;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    background-color: #25348c;
+    border-radius: 1px;
+    background-color:  #9ca1a8;
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 

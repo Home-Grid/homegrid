@@ -5195,7 +5195,7 @@ prop-types-extra@^1.0.1:
   dependencies:
     warning "^3.0.0"
 
-prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.5.x, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -5456,6 +5456,12 @@ react-google-maps@^8.3.4:
     recompose "^0.25.0"
     scriptjs "^2.5.8"
     warning "^3.0.0"
+
+react-iframe@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-iframe/-/react-iframe-1.0.7.tgz#c20fef7ca30e44e1f54922b9f6357c1c49f1d8e9"
+  dependencies:
+    prop-types "^15.5.x"
 
 react-overlays@^0.7.0:
   version "0.7.1"
