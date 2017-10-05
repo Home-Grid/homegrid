@@ -26,7 +26,6 @@ router.route("/").get(function(req, res) {
             });
         });
         res.send(results);
-        //console.log(results);
         return results;
 
     });
@@ -47,7 +46,7 @@ router.route("/cnn").get(function(req, res) {
 
             results.push({
                 title: title,
-                link: link
+                link: "http://www.cnn.com" + link
             });
 
         });

@@ -18,6 +18,26 @@ export default {
   },
   getYelps: function(){
     return axios.get("/api/yelps");
-  }
+  },
 
+  getWord: function(userinput){
+    var config = {
+    headers: {'X-Mashape-Key': 'XDgzApQJeUmshVnoSPfjk0G13aOXp14JCJTjsnh8wZRVUxezbf',
+            'Accept': 'application/json'}
+}
+    return axios.get("https://wordsapiv1.p.mashape.com/words/" + userinput + "/synonyms", config);
+  },
+
+  getDefinition: function(userinput){
+    var config = {
+    headers: {'X-Mashape-Key': 'XDgzApQJeUmshVnoSPfjk0G13aOXp14JCJTjsnh8wZRVUxezbf',
+            'Accept': 'application/json'}
+}
+    return axios.get("https://wordsapiv1.p.mashape.com/words/" + userinput + "/definition", config);
+
+  },
+
+  getWeather: function(userinput){
+    return axios.get("https://api.openweathermap.org/data/2.5/weather?q=" + userinput + "&units=imperial&APPID=e0bcadb175fe4fad12041d2069d72cca")
+  }
 };

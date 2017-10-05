@@ -1,0 +1,58 @@
+.searchbutton {
+    background-color: #dddad7;
+    height: 21px;
+    border: none;
+    margin-top: -2%;
+    margin-right: 2%;
+}
+
+.thesaurussearch {
+    height: 20px;
+    width: 78%;
+    margin-left: 3%;
+    float: left;
+    color: black;
+}
+
+.search {
+    margin-top: -38%;
+    font-size: 12px;
+}
+
+.t-nav{
+	margin-top: -6%;
+	background-color: #ffb535;
+	padding-bottom: 2%;
+	color:white;
+}
+
+.title{
+    font: 24px Helvetica,sans-serif;
+    line-height: 26px;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+        padding-top: 3%;
+        margin-top: 19px;
+}
+
+.theword{
+	    margin-top: 2%;
+	margin-left: 3%;
+	float:left;
+	display:inline-block;
+	        margin-bottom: 0.5%;
+}
+
+.theresults{
+	display:inline-block;
+	margin-left: 3%
+
+}
+
+.each{
+	display: inline-block;
+	float:left;
+	margin-right: 2.5%;
+	    margin-bottom: 0;
+}
