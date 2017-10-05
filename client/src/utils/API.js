@@ -35,5 +35,9 @@ export default {
 }
     return axios.get("https://wordsapiv1.p.mashape.com/words/" + userinput + "/definition", config);
 
+  },
+
+  getWeather: function(userinput){
+    return axios.get("https://api.openweathermap.org/data/2.5/weather?q=" + userinput + "&units=imperial&APPID=e0bcadb175fe4fad12041d2069d72cca")
   }
 };

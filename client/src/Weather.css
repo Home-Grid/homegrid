@@ -1,0 +1,52 @@
+.city{
+	float:left;
+	display: block;
+	font-size: 24px;
+	margin-left: 3%;
+	    margin-top: 5%;
+}
+
+.pic{
+	float:left;
+	display: block;
+	    margin-top: 1.5%;
+    height:60px;
+    position:absolute;
+}
+
+.temp{font-size: 54px;
+	    position:absolute;
+    position: absolute;
+    margin-top: 0%;
+           margin-left: 11%;
+
+}
+
+.low{
+	font-size: 12px;
+	margin-bottom: 0;
+	position:absolute;
+    margin-top: 6%;
+       margin-left: 0.75%;
+}
+
+.high{
+	    font-size: 12px;
+    margin-bottom: 0;
+    position: absolute;
+    margin-top: 8%;
+           margin-left: 0.75%;
+
+}
+
+.description{
+	position:absolute;
+           margin-left: 13%;
+    margin-top: 6%;
+}
+
+#weatherbox{
+	background-color: #53aef4;
+	color: white;
+	border-radius: 3%;
+}
