@@ -5,6 +5,7 @@ import News from "./News";
 import WoD from "./WoD";
 import Yelp from "./Yelp";
 import Thesaurus from "./Thesaurus";
+import Dictionary from "./Dictionary";
 
 const App = () =>
 <div className='container'>
@@ -20,7 +21,8 @@ const App = () =>
     </div>
 </div>
 <div className='row'>
-<div className='square'>
+<div id="dictionarybox" className='square'>
+<Dictionary/>
 </div>
 <div className='square'>
 <Google />

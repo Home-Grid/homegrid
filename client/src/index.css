@@ -10,6 +10,9 @@
   width: 33.3%;
 
 }
+#root{
+      margin-top: 1%;
+}
 
 #googlebox{
   width:25%;
@@ -22,6 +25,12 @@
 }
 
 #thesaurusbox{
+border:1px solid #dddad7;
+border-radius: 2%;
+overflow-y: scroll;
+}
+
+#dictionarybox{
 border:1px solid #dddad7;
 border-radius: 2%;
 overflow-y: scroll;

@@ -73,9 +73,6 @@
 }
 
 
-
-
-
 #cnnlogo:hover {
     cursor: pointer;
 }
@@ -91,7 +88,7 @@
 }
 
 #scrapedarticles {
-	margin-top: 0;
+    margin-top: 2%;
 }
 
 .nav {

@@ -4,22 +4,22 @@ import { Input, FormBtn } from "./components/Form";
 import Button from "./components/Button";
 
 
-class Thesaurus extends Component {
+class Dictionary extends Component {
    state = {
     word: "",
-    synonyms: []
+    definitions: []
   }
 
 handleChange = (event) => {
   this.setState({word: event.target.value});
 }
  
-     WORDS = (i) => {
+     WORDS1 = (i) => {
       i.preventDefault();
       console.log("button clicked");
-    API.getWord(this.state.word)
+    API.getDefinition(this.state.word)
       .then(res =>
-        this.setState({ word: res.data.word, synonyms: res.data.synonyms })
+        this.setState({ word: res.data.word, definitions: res.data.definition })
       )
       .catch(err => console.log(err));
   };
@@ -29,14 +29,14 @@ handleChange = (event) => {
     return (
     
       <div className="App">
-      <div className="t-nav">
-      <h1 className="title">Thesaurus</h1>
+      <div className="t-nav1">
+      <h1 className="title">Dictionary</h1>
       <form>
               <Input className="thesaurussearch"
                value={this.state.word} placeholder="Word" onChange={this.handleChange}
               />
                 <Button className="searchbutton"
-                onClick={this.WORDS}
+                onClick={this.WORDS1}
               >
               <p className="search">GO</p>
               </Button>
@@ -45,8 +45,8 @@ handleChange = (event) => {
       <div id="Word">
       <h3 className="theword">{this.state.word}</h3>
 <div className="theresults">
-       {this.state.synonyms.map(synonym => (
-      <p className="each">{synonym},</p>   
+   {this.state.definitions.map(definition => (
+      <p className="each1">• {definition}</p>   
       ))}
        </div>
 
@@ -58,4 +58,4 @@ handleChange = (event) => {
 
 }
 
-export default Thesaurus;
+export default Dictionary;
