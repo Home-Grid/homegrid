@@ -6,6 +6,7 @@ import WoD from "./WoD";
 import Yelp from "./Yelp";
 import Thesaurus from "./Thesaurus";
 import Dictionary from "./Dictionary";
+import VidLinks from "./VidLinks";
 import Weather from "./Weather";
 
 
@@ -38,7 +39,8 @@ const App = () =>
 <div id="weatherbox" className='square'>
 <Weather/>
 </div>
-<div className='square'>
+<div id = "vidlinks" className='square'>
+<VidLinks/>
 </div>
 <div id ="thesaurusbox" className='square'>
 <Thesaurus/>
