@@ -16,7 +16,6 @@ const App = () =>
 <div className='container'>
 <div className='row'>
 <div id ='giphy' className='square'>
-<GiphySelect />
 
 </div>
 <div id='newsbox' className='square'>
