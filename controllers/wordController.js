@@ -4,7 +4,7 @@ const db = require("../models");
 //removed sort
 module.exports = {
   findAll: function(req, res) {
-    var randomOffset =  Math.floor(Math.random() * 7);
+    var randomOffset =  Math.floor(Math.random() * 12);
     db.Word
       .find(req.query)
       .limit(-1)

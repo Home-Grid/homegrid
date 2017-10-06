@@ -41,6 +41,26 @@ const wordSeed = [
   {
     word: "Venerate",
     definition: "verb: to respect deeply"
+  },
+  {
+    word: "Obscure",
+    definition: "verb: make unclear"
+  },
+  {
+    word: "Eschew",
+    definition: "verb: avoid and stay away from deliberately; stay clear of"
+  },
+  {
+    word: "Meticulous",
+    definition: "adjective: marked by extreme care in treatment of details"
+  },
+  {
+    word: "Impudent",
+    definition: "adjective: improperly forward or bold"
+  },
+  {
+    word: "Incisive",
+    definition: "adjective: intelligently analytical and clear-thinking"
   }
 ];
 
