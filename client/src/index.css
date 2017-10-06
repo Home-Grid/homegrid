@@ -23,7 +23,7 @@
   margin-bottom:0%;
   z-index:0;
   position:absolute;
-     margin-top: -28%;
+     margin-top: -24%;
      background-color: black;
 
 
@@ -82,7 +82,7 @@ input.gsc-search-button-v2 {
 .projecttitle{
     position: absolute;
     margin-top:0%;
-    margin-left: 2.8%;
+    margin-left: 5%;
     font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
 
 }
