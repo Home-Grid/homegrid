@@ -1,4 +1,19 @@
 import React from "react";
+<<<<<<< HEAD
+import "./Nav.css";
+
+const Nav = () => (
+  <nav className="navbar navbar-inverse navbar-top">
+    <div className="container-fluid">
+      <div className="navbar-header">
+        <a href="/" className="navbar-brand">
+          React Recipes
+        </a>
+      </div>
+    </div>
+  </nav>
+);
+=======
 
 const Nav = () =>
   <nav className="navbar navbar-inverse navbar-top">
@@ -15,5 +30,6 @@ const Nav = () =>
       </div>
     </div>
   </nav>;
+>>>>>>> d6a044456dc779596855daa619582558979851fc
 
 export default Nav;

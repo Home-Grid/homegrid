@@ -19,12 +19,15 @@ export default {
   getYelps: function(){
     return axios.get("/api/yelps");
   },
+  getYelpSearch: function(userinputTerm,userinputCity){
+    return axios.get("/api/yelps/"+userinputTerm+"/"+userinputCity);
+  },
 
   getWord: function(userinput){
     var config = {
     headers: {'X-Mashape-Key': 'XDgzApQJeUmshVnoSPfjk0G13aOXp14JCJTjsnh8wZRVUxezbf',
             'Accept': 'application/json'}
-}
+          }
     return axios.get("https://wordsapiv1.p.mashape.com/words/" + userinput + "/synonyms", config);
   },
 

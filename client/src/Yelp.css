@@ -19,16 +19,11 @@
 text-decoration: none;
     margin-left: 1%;
 }
-
-
-#titleYelp{
-	padding-left:1%;
-	display: inline-block;
-	font-size: 25px;
-	margin:1% 2% 1% 2%;
-	color:#d32323;
-	font-family: 'Verdana', cursive;
+.yelpBTN{
+  background-color:#c41200;
 }
+
+
 
 
 
@@ -46,6 +41,20 @@ text-decoration: none;
 
 
 .yelptitlebox{
-	background-color: #f5f5f5;
-	border-bottom: 2px solid #aeafae;
+
+  	margin-top: -5.5%;
+  	padding-bottom: 2%;
+  	color:white;
+	  background-color:#c41200;
+}
+#titleYelp{
+  font: 24px Helvetica,sans-serif;
+  line-height: 26px;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: none;
+  padding-top: 3%;
+  margin-top: 19px;
+	color:white;
+  background-color:#c41200;
 }
