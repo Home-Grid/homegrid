@@ -110,12 +110,12 @@
 }
 
 .eachresult{
-      border-bottom: red solid 1.5px;
+      border-bottom: #dd0000 solid 1.5px;
       margin-top: 1%;
 }
 
 #formborder{
   padding-bottom: 1%;
-    border-bottom: red solid 1.5px;
+    border-bottom: #dd0000 solid 1.5px;
     margin-top: -3%;
 }
