@@ -39,5 +39,9 @@ export default {
 
   getWeather: function(userinput){
     return axios.get("https://api.openweathermap.org/data/2.5/weather?q=" + userinput + "&units=imperial&APPID=e0bcadb175fe4fad12041d2069d72cca")
+  },
+
+  getGifs: function(userinput){
+    return axios.get("http://api.giphy.com/v1/gifs/search?q=" + userinput + "&api_key=8ea55db6d2b0486693bb304e07aaa123&limit=21")
   }
 };

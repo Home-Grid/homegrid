@@ -6,20 +6,29 @@ import Button from "./components/Button";
 
 class Thesaurus extends Component {
    state = {
-    word: "",
-    synonyms: []
+    word: "thesaurus",
+    searchedWord:"",
+    synonyms: [],
+    loading: false
   }
 
 handleChange = (event) => {
   this.setState({word: event.target.value});
 }
+
+  componentDidMount(){
+    this.WORDS();
+  }
  
      WORDS = (i) => {
+                      if (i){
       i.preventDefault();
+    }
+      this.setState({loading: true, searchedWord: this.state.word, synonyms: []})
       console.log("button clicked");
     API.getWord(this.state.word)
       .then(res =>
-        this.setState({ word: res.data.word, synonyms: res.data.synonyms })
+        this.setState({loading: false, word: res.data.word, synonyms: res.data.synonyms })
       )
       .catch(err => console.log(err));
   };
@@ -42,15 +51,18 @@ handleChange = (event) => {
               </Button>
               </form>
               </div>
-      <div id="Word">
-      <h3 className="theword">{this.state.word}</h3>
+      {(this.state.loading == true) ? (<div class="Word"><img height="30px" className ="loading" src="https://static.colorofchange.org/static/v3/images/loading-circle.gif"/></div>) :(
+    <div id="Word">
+     <h3 className="theword">{this.state.searchedWord}</h3>
+     <br/>
+     <br/>
 <div className="theresults">
        {this.state.synonyms.map(synonym => (
       <p className="each">{synonym},</p>   
       ))}
        </div>
 
-</div>
+</div>)}
       </div>
     );
 

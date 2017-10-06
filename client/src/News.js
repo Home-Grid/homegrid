@@ -52,7 +52,7 @@ class News extends Component {
   
      {this.state.articles.map(article => (
                       
-                        <p className="articles"><a className="articletext" href={article.link}> {article.title}</a></p> 
+                        <p className="articles"><a className="articletext" href={article.link} target="_blank"> {article.title}</a></p> 
                      
                 ))}
 </div>

@@ -1,0 +1,45 @@
+.gifs{
+	text-align: left;
+	float: left;
+	padding:3%;
+}
+
+.allGifs{
+	    margin-left: 2%;
+	    margin-right: 2%;
+	        float: left;
+    text-align: left;
+    
+}
+
+.t-nav2{
+	background-color: #983ded;
+	    padding-top: 2%;
+	    color: black;
+
+}
+
+.title3{
+	font-family: 'Anton', sans-serif;
+	    float: left;
+    font-size: 18px;
+    margin: 3% 3% 0% 3%;
+
+}
+
+.gifsearch{
+	    height: 20px;
+     width: 46%;
+    margin-left: 2.5%;
+    float: left;
+    color: black;
+    margin-top: -2.5%;
+}
+
+.searchbutton1{
+	    background-color: black;
+    height: 21px;
+    border: none;
+    margin-top: -6%;
+    margin-right: 2.5%;
+}

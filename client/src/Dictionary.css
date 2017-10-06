@@ -23,6 +23,7 @@
 	background-color: #428ced;
 	padding-bottom: 2%;
 	color:white;
+        padding-top: 1%;
 }
 
 .title{
@@ -56,4 +57,8 @@
 	margin-right: 2.5%;
 	    margin-bottom: 0;
         text-align: left;
+}
+
+.loading{
+    margin-top: 10%;
 }

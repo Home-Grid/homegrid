@@ -10,6 +10,7 @@ import './WoD.css';
 import './Yelp.css';
 import './Dictionary.css';
 import './Weather.css';
+import './Gif.css';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

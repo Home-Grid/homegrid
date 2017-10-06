@@ -18,22 +18,26 @@
 
 #googlebox{
   width:25%;
-    margin-left: 35%;
+    margin-left: 36%;
   margin-bottom:0%;
-  z-index:100;
+  z-index:0;
   position:absolute;
      margin-top: -28%;
+     background-color: black;
+
 
 }
 
+#googlebox1{
+  background-color: black;
+}
+
 #thesaurusbox{
-border:1px solid #dddad7;
 border-radius: 3%;
 overflow-y: scroll;
 }
 
 #dictionarybox{
-border:1px solid #dddad7;
 border-radius: 3%;
 overflow-y: scroll;
 }
@@ -47,9 +51,9 @@ margin-top: 2%;
 
 }
 
-#calendar{
-  background-color: #fff789;
+#Gif{
   border-radius: 3%;
+  overflow-y: scroll;
 
 }
 
@@ -57,3 +61,66 @@ input.gsc-search-button-v2 {
       height: 22px;
 
     }
+
+    .googlebutton{
+      display: none;
+    }
+
+    body{
+      background-color: black;
+    }
+
+    .homepic{
+      margin-top: 9%;
+    z-index: 1101;
+    position: absolute;
+    margin-left: 7%;
+    }
+
+
+.projecttitle{
+    position: absolute;
+    margin-top:0%;
+    margin-left: 2.8%;
+    font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+
+}
+
+.letter{
+  display: inline-block;
+      font-size: 48px;
+}
+
+#letter1{
+  color:#53aef4;
+}
+
+#letter2{
+  color:#ff3232;
+}
+
+#letter3{
+  color:#ffd53d;
+}
+
+#letter4{
+  color:#53aef4;
+}
+
+#letter5{
+  color:#319b1f;
+}
+
+#letter6{
+  color:#ff3232;
+}
+
+#letter7{
+  color:#ffd53d;
+}
+
+#letter8{
+  color:#319b1f;
+}
+
+

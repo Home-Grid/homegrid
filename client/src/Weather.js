@@ -6,7 +6,7 @@ import Button from "./components/Button";
 
 class Weather extends Component {
    state = {
-    userinput: "",
+    userinput: "Irvine",
     city: "",
     temp: "",
     high: "",
@@ -15,13 +15,20 @@ class Weather extends Component {
     icon: ""
   }
 
+  componentDidMount(){
+    this.WEATHER();
+  }
+
 handleChange = (event) => {
   this.setState({userinput: event.target.value});
   event.preventDefault();
 }
 
      WEATHER = (i) => {
+      if (i){
       i.preventDefault();
+    }
+  
       console.log("button clicked");
     API.getWeather(this.state.userinput)
       .then(res =>

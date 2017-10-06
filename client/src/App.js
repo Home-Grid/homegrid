@@ -7,14 +7,15 @@ import Yelp from "./Yelp";
 import Thesaurus from "./Thesaurus";
 import Dictionary from "./Dictionary";
 import Weather from "./Weather";
+import Gif from "./Gif";
 
 
 
 const App = () =>
 <div className='container'>
 <div className='row'>
-<div id ='calendar' className='square'>
-<Calendar/>
+<div id ='Gif' className='square'>
+<Gif/>
 </div>
 <div id='newsbox' className='square'>
 <News/>
@@ -27,7 +28,7 @@ const App = () =>
 <div id="dictionarybox" className='square'>
 <Dictionary/>
 </div>
-<div className='square'>
+<div id='googlebox1' className='square'>
 <Google />
 </div>
    <div className='square' id='newsbox'>
