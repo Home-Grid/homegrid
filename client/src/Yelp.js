@@ -46,11 +46,11 @@ class Yelp extends Component {
     return (
       <div className="App">
       <div className="yelptitlebox">
-      <h1 id="titleYelp">Yelp</h1>
+      <img height="60px" width="100px" className="yelptitle" src="https://s3-media3.fl.yelpcdn.com/assets/srv0/styleguide/24e1fe240f00/assets/img/brand_guidelines/yelp_fullcolor_outline.png"/>
 
 
        </div>
-       <form>
+       <form id="formborder">
                <Input className="thesaurussearch"
                 value={this.state.searchTerm} placeholder="Coffee" onChange={this.handleChangeTerm}
                />
@@ -61,19 +61,21 @@ class Yelp extends Component {
                  <Button className="yelpBTN"
                  onClick={this.RETRIEVE}
                >
-               <img id='yelpbutton' height="30px" width="30px" src='https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/64/9d/aa/649daa0e-c33d-fc63-9100-40183b3990c9/source/1200x630bb.jpg'/>
+               <img id='yelpbutton' height="18px" width="18px" src='http://rosegarciabeauty.com/wp-content/uploads/2013/09/HIRES-Yelp.png'/>
                </Button>
        </form>
-      <div id="scrapedarticles">
+      <div id="yelp">
 
      {this.state.businesses.map(business => (
-                        <a className="articlesYelp" href={business.url}>
+      <div className="eachresult">
+       <a className="articlesYelp yelplink" href={business.url}>
 
-                        <p className="articletextYelp">{business.name}   Rating: {business.rating}
-
-                        <img id={business.name} height="35px" width="35px" src={business.imgurl}/>
-                        </p>
+       <img class ="yelppics " id={business.name} height="50px" width="50px" src={business.imgurl}/>
+          
+                        <p className="articletextYelp yelplink">{business.name}</p>
+                         <p className="articletextYelp2 yelplink">  Rating: {business.rating}</p>
                         </a>
+                        </div>
                 ))}
 </div>
       </div>
