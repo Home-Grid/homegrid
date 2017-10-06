@@ -5,8 +5,8 @@ import Button from "./components/Button";
 
 class WoD extends Component {
    state = {
-    words:[],
-    randomWord:[]
+    words:[]
+
   }
 
 
@@ -31,23 +31,27 @@ class WoD extends Component {
     return (
       <div className="App">
         <div className="wodtitlebox">
-          <h3 id="wodtitle">
-          Word of the Day
+          <h3 id="wodtitle" className= "center-block">
+          Vocabulary Builder
+          </h3>
           <Button onClick={this.getWords}
-            type="success"
-            bsSize='small'
+            type="warning"
+            className="input-sm center-block"
+
             >
             New Word
-          </Button>          </h3>
-
+          </Button>
         </div>
+
 
         <div id="wordbody">
 
         {this.state.words.map(word => (
-          <p className="word">{word.word}<br/>{word.definition}</p>
+          <p className="word">
+          <h4>{word.word}</h4><h6>{word.definition}</h6>
+          </p>
         ))}
-        {this.state.randomWord}
+
         </div>
       </div>
     );
