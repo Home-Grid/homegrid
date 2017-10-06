@@ -68,7 +68,7 @@ class Yelp extends Component {
 
      {this.state.businesses.map(business => (
       <div className="eachresult">
-       <a className="articlesYelp yelplink" href={business.url}>
+       <a target="_blank" className="articlesYelp yelplink" href={business.url}>
 
        <img class ="yelppics " id={business.name} height="50px" width="50px" src={business.imgurl}/>
           

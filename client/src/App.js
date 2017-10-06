@@ -16,8 +16,8 @@ import Gif from "./Gif";
 const App = () =>
 <div className='container'>
 <div className='row'>
-<div id ='Gif' className='square'>
-<Gif/>
+<div id="weatherbox" className='square'>
+<Weather/>
 </div>
 <div id='newsbox' className='square'>
 <News/>
@@ -27,19 +27,20 @@ const App = () =>
     </div>
 </div>
 <div className='row'>
-<div id="dictionarybox" className='square'>
-<Dictionary/>
-</div>
+<div className='square' id='newsbox'>
+    <Yelp />
+    </div>
+
 <div id='googlebox1' className='square'>
 <Google />
 </div>
-   <div className='square' id='newsbox'>
-    <Yelp />
-    </div>
+<div id="dictionarybox" className='square'>
+<Dictionary/>
+</div>
 </div>
 <div className='row'>
-<div id="weatherbox" className='square'>
-<Weather/>
+<div id ='Gif' className='square'>
+<Gif/>
 </div>
 <div id = "vidlinks" className='square'>
 <VidLinks/>
