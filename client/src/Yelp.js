@@ -71,7 +71,7 @@ class Yelp extends Component {
        <a target="_blank" className="articlesYelp yelplink" href={business.url}>
 
        <img class ="yelppics " id={business.name} height="50px" width="50px" src={business.imgurl}/>
-          
+
                         <p className="articletextYelp yelplink">{business.name}</p>
                          <p className="articletextYelp2 yelplink">  Rating: {business.rating}</p>
                         </a>
