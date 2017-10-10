@@ -5,13 +5,9 @@ import React, {
 
 export default class Google extends Component {
   componentDidMount(i){
-var cx = '015072022119486944339:qglhajlqals';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
+    if (i){
+    i.preventDefault();
+  }
 
   }
 
@@ -32,6 +28,9 @@ var cx = '015072022119486944339:qglhajlqals';
       <h1 id ="letter8" className="letter">d</h1>
       </h1>
       <img className='homepic' height='30px' src="Untitled-1.png"/>
+      <form action="./results.html">
+      <input class="search-input" id ="searchbox" name="q" size="35" type="text"/>
+      </form>
 
     </div>
   )

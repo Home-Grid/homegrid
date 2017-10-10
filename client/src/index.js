@@ -11,6 +11,7 @@ import './Yelp.css';
 import './Dictionary.css';
 import './Weather.css';
 import './Gif.css';
+import './Google.css';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -72,17 +72,17 @@ input.gsc-search-button-v2 {
     }
 
     .homepic{
-      margin-top: 9%;
+       margin-top: 2.9%;
     z-index: 1101;
     position: absolute;
-    margin-left: 7%;
+    margin-left: 8%;
     }
 
 
 .projecttitle{
-    position: absolute;
-    margin-top:0%;
-    margin-left: 5%;
+       position: absolute;
+    margin-top: 0%;
+    margin-left: 4%;
     font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
 
 }

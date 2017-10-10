@@ -51,7 +51,6 @@ handleChange = (event) => {
               </Button>
               </form>
               </div>
-              
       {(this.state.loading == true) ? (<div class="Word"><img height="30px" className ="loading" src="https://static.colorofchange.org/static/v3/images/loading-circle.gif"/></div>) :(
     <div id="Word">
      <h3 className="theword">{this.state.searchedWord}</h3>

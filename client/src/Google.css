@@ -1,0 +1,19 @@
+.search-input {
+    padding:5px 10px;
+    background-image:url('http://searchengineland.com/figz/wp-content/seloads/2015/05/google-search-console-800x146.png');
+    background-repeat:no-repeat;
+    background-position:1px;
+    background-size: 60%;
+    color:transparent;
+
+}
+.search-input:focus {
+    background-image:none;color:black;
+}
+
+#searchbox{
+	margin-top: 25%;
+    margin-right: 2%;
+
+}
+

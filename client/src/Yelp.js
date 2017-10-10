@@ -83,10 +83,6 @@ class Yelp extends Component {
   }
 
 
-
-
-
-
 }
 
 export default Yelp;
