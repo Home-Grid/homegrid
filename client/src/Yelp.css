@@ -128,7 +128,7 @@
     text-decoration: none;
     margin-left: 22%;
     font-family: 'Open Sans', sans-serif;
-    margin-top: -4.5%;
+    margin-top: -2.5%;
     font-family: inherit;
     text-decoration: none;
     margin-bottom:0px;
@@ -141,10 +141,16 @@
     text-decoration: none;
     margin-left: 22%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-family: inherit;
     margin-top: -2.5%;
     text-decoration: none;
+}
+
+.eachresult{
+      border-bottom: #dd0000 solid 1.5px;
+      margin-top: 3%;
+      margin-bottom: 3%;
 }
 
     }
