@@ -9,6 +9,7 @@ import Dictionary from "./Dictionary";
 import VidLinks from "./VidLinks";
 import Weather from "./Weather";
 import Gif from "./Gif";
+import MediaQuery from 'react-responsive';
 
 
 
