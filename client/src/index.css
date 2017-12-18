@@ -72,7 +72,7 @@ input.gsc-search-button-v2 {
     }
 
     .homepic{
-       margin-top: 2.9%;
+          margin-top: 13.9%;
     z-index: 1101;
     position: absolute;
     margin-left: 8%;
@@ -82,7 +82,8 @@ input.gsc-search-button-v2 {
 .projecttitle{
        position: absolute;
     margin-top: 0%;
-    margin-left: 4%;
+ text-align:center;
+ margin-left: 4%;
     font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
 
 }
@@ -161,3 +162,21 @@ input.gsc-search-button-v2 {
 
 
 }
+
+  @media only screen and (max-width: 1200px)  {
+    .letter{
+  display: inline-block;
+      font-size: 24px;
+}
+
+.projecttitle{
+       position: absolute;
+    margin-top: 0%;
+ text-align:center;
+ margin-left: 7%;
+    font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+
+}
+
+
+  }

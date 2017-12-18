@@ -26,8 +26,8 @@ export default class Google extends Component {
       <h1 id ="letter6" className="letter">r</h1>
       <h1 id ="letter7" className="letter">i</h1>
       <h1 id ="letter8" className="letter">d</h1>
+       <img className='homepic' height='30px' src="Untitled-1.png"/>
       </h1>
-      <img className='homepic' height='30px' src="Untitled-1.png"/>
       <form action="./results.html">
       <input class="search-input" id ="searchbox" name="q" size="35" type="text"/>
       </form>
