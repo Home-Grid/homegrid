@@ -119,3 +119,32 @@
     border-bottom: #dd0000 solid 1.5px;
     margin-top: -3%;
 }
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+
+
+.articletextYelp2 {
+    color: black;
+    text-decoration: none;
+    margin-left: 22%;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -4.5%;
+    font-family: inherit;
+    text-decoration: none;
+    margin-bottom:0px;
+    font-size: 12px;
+}
+
+
+.articletextYelp {
+    color: black;
+    text-decoration: none;
+    margin-left: 22%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-family: inherit;
+    margin-top: -2.5%;
+    text-decoration: none;
+}
+
+    }
