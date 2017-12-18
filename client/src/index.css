@@ -140,7 +140,7 @@ input.gsc-search-button-v2 {
   overflow-y: scroll;
 }
 
-@media only screen and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 768px) {
   .square {
   background: #fff;
 /*  border: 1px solid #999;*/

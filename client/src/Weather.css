@@ -51,7 +51,7 @@
 	border-radius: 3%;
 }
 
-@media only screen and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 768px) {
 .temp{font-size: 54px;
 	    position:absolute;
     position: absolute;
@@ -97,4 +97,54 @@
     height:60px;
     position:absolute;
 }
+	}
+
+	@media only screen and (max-width: 768px) and (orientation: landscape) {
+		.temp{font-size: 54px;
+	    position:absolute;
+    position: absolute;
+    margin-top: 0%;
+           margin-left: 36%;
+
+}
+.description{
+	position:absolute;
+           margin-left: 38%;
+    margin-top: 10%;
+}
+
+.low{
+	font-size: 12px;
+	margin-bottom: 0;
+	position:absolute;
+    margin-top: 10.5%;
+       margin-left: 4%;
+}
+
+.high{
+	    font-size: 12px;
+    margin-bottom: 0;
+    position: absolute;
+      margin-top: 13%;
+           margin-left: 4%;
+
+}
+
+.city{
+	float:left;
+	display: block;
+	font-size: 24px;
+	margin-left: 4%;
+	    margin-top: 3%;
+}
+
+.pic{
+	float:left;
+	display: block;
+	    margin-top: 3%;
+    height:60px;
+    position:absolute;
+    margin-left: 2%;
+}
+
 	}
