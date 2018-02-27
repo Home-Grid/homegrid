@@ -111,7 +111,8 @@
 
 .eachresult{
       border-bottom: #dd0000 solid 1.5px;
-      margin-top: 1%;
+      margin-top: 4%;
+      padding-bottom: 4%;
 }
 
 #formborder{

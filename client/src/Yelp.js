@@ -61,7 +61,7 @@ class Yelp extends Component {
                  <Button className="yelpBTN"
                  onClick={this.RETRIEVE}
                >
-               <img id='yelpbutton' height="18px" width="18px" src='http://rosegarciabeauty.com/wp-content/uploads/2013/09/HIRES-Yelp.png'/>
+               <img id='yelpbutton' height="18px" width="18px" src='https://cdn1.iconfinder.com/data/icons/simple-icons/256/yelp-256-black.png'/>
                </Button>
        </form>
       <div id="yelp">
